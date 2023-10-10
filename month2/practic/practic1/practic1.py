@@ -1,5 +1,6 @@
 import pprint
 
+
 class Animal():
     def __init__(self, height: int, age: int, color: str, tail: bool, crawl: bool):
         """Class for animal"""
@@ -64,7 +65,7 @@ class ZooShow():
         pprint.pprint(self.shows)
         if input(f"Do you want a ticket for {', '.join(self.shows.keys())}? (y/N)\n> ").lower().startswith("y"):
             print(f"You got a ticket for {', '.join(self.shows.keys())} for ${self.ticket_price:.2f}")
-            
+
         else:
             print("No ticket for you!")
 
